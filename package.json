@@ -1,0 +1,9 @@
+{
+    "name": "hexo-theme-forever",
+    "version": "0.0.1",
+    "author": "foreversc<fengshuochn@126.com>",
+    "private": true,
+    "dependencies": {
+        "hexo-renderer-ejs": "*",
+    }
+}
