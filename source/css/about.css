@@ -1,0 +1,152 @@
+.container{
+    margin: 1em 0em;
+    width: 100%;
+    padding: 0 2em 0 2em;
+}
+
+/*返回块*/
+.back{
+    position: fixed;
+    z-index: 2;
+}
+
+/*选择块*/
+.select{
+    float: right;
+    width: 40%;
+    height: 2em;
+}
+.btn-group{
+    width: 100%;
+}
+.btn-group button{
+    width: 100%;
+} 
+.btn-group ul{
+    width: 100%;
+} 
+.btn-group li{
+    text-align: center;
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+
+
+/*内容块*/
+.content{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*单个作品或笔记部分*/
+.content p{ 
+    text-align: left;
+    margin:0.3em 2em; 
+}
+
+.content img{
+    width: 80%;
+}
+
+/*所有作品部分*/
+.choose{
+    width: 100%;
+}
+
+.one-work{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 20em;
+    margin: 1.1em;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ccc;
+    overflow: hidden;
+}
+
+.one-work h6{
+    text-align: center;
+    margin: 0;
+
+    line-height: 2em;
+}
+
+.one-work a img{
+    width: 100%;
+    height: 17em;
+     margin: 0px;
+}
+
+.one-work .img-div{
+    position: absolute;
+    margin: 0px;
+    background: #898989;
+    color:aliceblue;
+    left: 0px;
+    top: -100%;
+    opacity:0.8;
+    width: 100%;
+    height: 17em;
+    text-align: center;
+    padding-top: 50%;
+}
+
+/*所有笔记部分*/
+
+.yearnotes{
+    width: 90%;
+    margin: 2em auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ccc;
+   
+}
+
+.yearnotes .year{
+    float: left;
+    width: 10%;
+    text-align: center;
+    
+}
+.yearnotes .notes{
+    float: left;
+    width: 90%;
+    text-align: left;
+    padding: 1em;
+}
+
+.yearnotes .notes li{
+    margin: 0.5em auto;
+}
+
+
+
+
+
+
+
+
+
+/*导航栏*/
+.navbar{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*跳到头部*/
+.jumptohead{
+    display: none;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+}
+
+
+/*页脚*/
+.footer{
+    text-align: center;
+    width: 100%;
+}

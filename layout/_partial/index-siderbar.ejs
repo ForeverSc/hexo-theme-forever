@@ -1,0 +1,40 @@
+<div class="sidermenubar">
+    <div class="name-section">
+        <div class="avatar-img">
+            <img src="<%=theme.avatar%>" alt="avatar">
+        </div>
+        <% if (theme.author){%>
+        <h4><%=theme.author%></h4>
+        <%}%>
+        <% if (theme.motto){%>
+        <p><%= (theme.motto) %></p>
+        <%}%>
+    </div>
+    <div class="contact-section">
+        <ul>
+            <li>
+                <a href="<%=theme.github%>"><span class="fui-github"></span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <ul class="main-navigation">
+            <li>
+                <a href="#home"><span class="fui-home"></span><i>Home</i></a>
+            </li>
+            <li>
+                <a href="#about"><span class="fui-user"></span><i>About</i></a>
+            </li>
+            <li>
+                <a href="#works"><span class="fui-list-bulleted"></span><i>Works</i></a>
+            </li>
+            <li>
+                <a href="#notes"><span class="fui-bookmark"></span><i>Notes</i></a>
+            </li>
+            <li>
+                <a href="#contact"><span class="fui-chat"></span><i>Contact</i></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
