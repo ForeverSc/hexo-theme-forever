@@ -7,11 +7,21 @@
     <title><%=theme.title%></title>
     <%}%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--后期对css进行精简删除-->
     <!-- Loading Bootstrap -->
     <%- css('css/vendor/bootstrap.min') %>
     <!-- Loading Flat UI -->
+   
     <%- css('css/flat-ui.min') %>
+     <% if(is_home()){%>
     <%- css('css/framework.css') %>
+    <%}%>
+     <% if(is_post()){%>
+    <%- css('css/about.css') %>
+    <%}%>
+    
+     
+   
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.js"></script>

@@ -3,6 +3,17 @@ menu:
   主页: /
   所有文章: /archives
 
+
+#主页图片URL，home的图片如果需要替换，直接替换img中的home.png即可
+pictures:
+  about: img/about.png
+  contact: img/contact.png
+
+#你的社交
+contact:
+  github: https://github.com/ForeverSc
+  mail: fengshuochn@126.com
+
 #你的头像url
 avatar: img/avatar.png
 

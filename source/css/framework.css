@@ -105,7 +105,7 @@ body {
     margin: 10px 0px;
 }
 #home {
-    background: url(../img/pic/homepage.png) center no-repeat;
+    background: url(../img/home.png) center no-repeat;
     background-size: cover;
 }
 #home h3 {
@@ -175,6 +175,12 @@ body {
     height: 3em;
     text-align: left;
     line-height: 3em;
+    padding-right: 3em;
+}
+
+#notes ul li span{
+    float: right;
+    margin-right: lem;
 }
 
 #notes button{

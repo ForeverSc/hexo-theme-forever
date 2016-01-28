@@ -1,3 +1,13 @@
+//平稳滑动函数
+function _scroll(obj, time) {
+
+    $("html,body").animate({
+        scrollTop: $(obj).offset().top
+    }, time,'swing');
+
+}
+
+/*主页部分*/
 //导航栏选中阴影&&平稳滑动效果
 var lilist = $(".content-section ul li");
 var alist = lilist.find("a");
@@ -59,12 +69,49 @@ $("#works img").hover(
 
 );
 
-
 //设置点击作品的链接
 $(document).ready(function(){
-    $("#works .onework a").attr("href","./work.html");
-    $("#notes ul li a").attr("href","./note.html");
+    //$("#works .onework a").attr("href","./work.html");
+    //$("#notes ul li a").attr("href","./note.html");
     
 });
 
 
+/*单页部分*/
+//判定何时出现回到顶部按键    
+var height = $(window).height() / 2;
+$(window).scroll(function () {
+    var scrollval = $(window).scrollTop();
+    if (scrollval > height) {
+        $(".jumptohead").css({
+            display: "block"
+        });
+    } else {
+        $(".jumptohead").css({
+            display: "none"
+        });
+    }
+});
+//返回
+function goBack() {
+    history.go(-1); //history.back(-1);
+}
+
+$(".back a").click(function () {
+    goBack();
+    return false;
+});
+
+//触发图片hover事件,下拉遮罩效果
+$(".one-work img").hover(
+    function () {
+        $(this).siblings("div").finish().delay(100).animate({
+            top: 0
+        }, 400);
+    },
+    function () {
+        $(this).siblings("div").finish().delay(100).animate({
+            top: '-100%'
+        }, 400);
+    }
+);
