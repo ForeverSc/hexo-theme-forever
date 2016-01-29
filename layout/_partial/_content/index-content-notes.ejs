@@ -1,18 +1,16 @@
 <div class="part-section" id="notes">
         <h4>Notes</h2>
         <ul>
-        <!--TODO增加条目限制数6-->
-        <% site.posts.each(function(post){ %>
-           <li>
-               <a href="<%=post.path%>"><%=post.title%></a>
-               <span><%=date(post.date,'YYYY/M/D')%></span>
+        <% var articles=site.posts.toArray();%>
+        <%var length=articles.length%>
+        <% for(var i=0;i<6;i++){ %>
+            <li>
+               <a href="<%=articles[length-i-1].path%>"><%=articles[length-i-1].title%></a>
+               <span><%=date(articles[length-i-1].date,'YYYY/M/D')%></span>
            </li>
-          <% }) %>
+        <%}%>
           </ul>
-        <button class="btn btn-embossed btn-primary">
-        change
-        </button>
     <p>Some notes about which i think is important</p>
-    <p><a href="./notes.html">To find more notes...</a></p>
+    <p><a href="archives">To find more notes...</a></p>
 </div>
 <hr>  

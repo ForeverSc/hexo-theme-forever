@@ -1,3 +1,4 @@
+/*函数部分*/
 //平稳滑动函数
 function _scroll(obj, time) {
 
@@ -115,3 +116,13 @@ $(".one-work img").hover(
         }, 400);
     }
 );
+
+/*主页加载完成后，新增*/
+//change button点击更换推荐的文章
+$(document).ready(function(){
+    
+});
+
+
+
+
