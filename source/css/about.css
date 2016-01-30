@@ -122,8 +122,6 @@
 }
 
 
-
-
 /*导航栏*/
 .navbar{
     width: 100%;
@@ -145,3 +143,47 @@
     text-align: center;
     width: 100%;
 }
+
+
+/*archives*/
+.content .archives-wrap{
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ccc;
+    margin: 2em;
+}
+
+.content .archives-wrap hr{
+    margin: 0;
+}
+
+.content .archives-wrap .archive-year-wrap{
+    
+}
+
+.content .archives-wrap .archives{
+    padding: 0 1em 0 1em;
+}
+
+
+.archive-article-inner .archive-article-header{
+    text-align: left;
+}
+
+
+.archive-article-inner .a-title{
+    color: black;
+}
+
+
+.archive-article-inner .a-date{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
