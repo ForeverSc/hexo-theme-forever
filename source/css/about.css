@@ -180,8 +180,14 @@
 }
 
 
+/*tags和categories*/
+.article-tag a{
+    float: left;
+}
 
-
+.article-category a{
+    float: right;
+}
 
 
 
