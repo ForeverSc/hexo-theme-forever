@@ -124,5 +124,14 @@ $(document).ready(function(){
 });
 
 
+/*为每个tag增加背景图*/
+$(document).ready(function(){
+    var tagspan=document.createElement("span");
+    tagspan.setAttribute("class","fui-tag");
+    $(".article-tag-list").find(".article-tag-list-item").prepend(tagspan);
+});
+
+
+
 
 

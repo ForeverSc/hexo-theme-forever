@@ -1,0 +1,11 @@
+    <% if (page.categories && page.categories.length){ %>
+          <div class="article-category">
+              <span class="fui-bookmark"></span>
+            <%- list_categories(page.categories, {
+              show_count: false,
+              class: 'article-category',
+              style: 'none',
+              separator: '&nbsp'
+            }) %>
+          </div>
+        <% } %>

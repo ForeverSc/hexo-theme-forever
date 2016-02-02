@@ -180,14 +180,43 @@
 }
 
 
-/*tags和categories*/
-.article-tag a{
-    float: left;
+
+/*article-info 包括tags categories 和date*/
+.article-info{
+    position: relative;
 }
 
-.article-category a{
-    float: right;
+
+/*tags和categories*/
+.article-tag,.article-category {
+    float: left;
+    margin-top: 0;
 }
+
+.article-tag .article-tag-list{
+    float: left;
+    list-style: none;
+}
+
+.article-tag-list .article-tag-list-item{
+    float: left;
+    margin-right: 0.5em;
+}
+
+.article-tag-list .article-tag-list-item:last-child{
+    margin-right: 2em;
+}
+
+/*date*/
+.article-date{
+    float: right;
+     margin-top: 0;
+}
+
+.article-date span{
+    margin: 0px;
+}
+
 
 
 
