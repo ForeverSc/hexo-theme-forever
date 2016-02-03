@@ -144,6 +144,14 @@
     width: 100%;
 }
 
+.footer-left{
+    float: left;
+}
+
+.footer-right{
+    float: right;
+}
+
 
 /*archives*/
 .content .archives-wrap{
@@ -218,6 +226,28 @@
 }
 
 
+/*categories and tags*/
+/*tags*/
+.layout-wrap{
+    text-align: center;
+}
+
+.layout-wrap-inner .list-categories{
+    float: left;
+}
+
+.layout-wrap-inner.tag-cloud a{
+    margin: 1em;
+}
+.layout-wrap-inner a span{
+    margin-left: 0.5em;
+}
+
+/*categories*/
+.layout-wrap-inner.list-categories .category-list{
+    list-style: none;
+   
+}
 
 
 

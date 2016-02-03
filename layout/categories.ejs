@@ -1,16 +1,28 @@
-   <div class="container">
+ <div class="container">
         <div class="back">
             <a href="#">
                 <span class="fui-arrow-left"></span>
             </a>
         </div>
-        <%- partial('_partial/article')%>
+        <%- partial('_partial/_selectors/selector')%>
+        <section class="layout-wrap">
+          <div class="layout-title">
+            <span><%= page.title %></span>
+          </div>
+          <div class="layout-wrap-inner list-categories">
+            <% if(site.categories.length) { %>
+              <%- list_categories(site.categories) %>
+            <% } %>
+          </div>
+        </section>
         <div class="jumptohead">
             <a href="#">
                 <span class="fui-triangle-up"></span>
             </a>
         </div>
         <div class="clear"></div>
+        <hr>
+           
         <div class="footer">
               <div class="footer-left">
     		&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
@@ -20,3 +32,4 @@
       	</div>
         </div>
     </div>
+

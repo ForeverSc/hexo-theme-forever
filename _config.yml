@@ -2,6 +2,9 @@
 menu:
   主页: /
   所有文章: /archives
+  Categories: categories
+  Tags: tags
+  About: about
 
 
 #主页图片URL，home的图片如果需要替换，直接替换img中的home.png即可
@@ -19,5 +22,12 @@ avatar: img/avatar.png
 
 #你的座右铭
 motto: thinking coding
+
+#works的URL
+works:
+  work_1: https://github.com/ForeverSc/hexo-theme-forever
+  work_2: https://github.com/ForeverSc/CCNUChiSha
+  work_3:
+  work_4:
 
 
