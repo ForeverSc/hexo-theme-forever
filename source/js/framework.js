@@ -127,13 +127,13 @@ $(document).ready(function(){
 /*为每个tag增加背景图*/
 $(document).ready(function(){
    
-    var tagspan=document.createElement("span");
-    tagspan.setAttribute("class","fui-tag");
      /*文章前部*/
-    $(".article-tag-list").find(".article-tag-list-item").prepend(tagspan);
+    //$(".article-tag-list").find(".article-tag-list-item").prepend(tagspan);  
+    $(".article-tag-list").find(".article-tag-list-item").find(".article-tag-list-link").addClass("fui-tag");
+    $(".article-tag-list").find(".article-tag-list-item").find(".article-tag-list-link").prepend(" ");
     
     /*tags列表中*/
-    $(".layout-wrap-inner.tag-cloud a").prepend(tagspan);
+    $(".layout-wrap-inner.tag-cloud a").addClass("fui-tag");
 });
 
 

@@ -8,7 +8,12 @@
        
             <div class="clear"></div>   
       </div>
-
-      <%- page.content%>
+      <hr>
+      <div class="article-content">
+      <%- markdown(page.content) %>
+      </div>
     </div>
+        <div class="nav">
+         <%- partial('_article/nav')%>
+      </div>
     <hr>

@@ -122,19 +122,23 @@
 }
 
 
-/*导航栏*/
-.navbar{
-    width: 100%;
-    text-align: center;
-}
-
 
 /*跳到头部*/
 .jumptohead{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background:#eee;
     display: none;
     position: fixed;
     right: 2em;
     bottom: 2em;
+    text-align: center;
+}
+
+.jumptohead a{
+    display: block;
+    line-height: 40px;
 }
 
 
@@ -179,12 +183,13 @@
 
 
 .archive-article-inner .a-title{
-    color: black;
+    color: #34495e;
 }
 
 
 .archive-article-inner .a-date{
     float: right;
+    color: #34495e;
 }
 
 
@@ -208,7 +213,7 @@
 
 .article-tag-list .article-tag-list-item{
     float: left;
-    margin-right: 0.5em;
+    margin-right: 1.2em;
 }
 
 .article-tag-list .article-tag-list-item:last-child{
@@ -239,9 +244,7 @@
 .layout-wrap-inner.tag-cloud a{
     margin: 1em;
 }
-.layout-wrap-inner a span{
-    margin-left: 0.5em;
-}
+
 
 /*categories*/
 .layout-wrap-inner.list-categories .category-list{
@@ -249,6 +252,30 @@
    
 }
 
+
+/*nav*/
+.nav{
+    width: 50%;
+    margin: auto;
+}
+
+
+.nav div ul{
+    margin-left: 10%;
+}
+
+
+
+/*article-content*/
+.article-content{
+
+}
+
+.article-content img{
+    width: 50%;
+    height: 50%;
+
+}
 
 
 
