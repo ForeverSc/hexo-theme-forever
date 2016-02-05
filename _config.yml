@@ -7,6 +7,17 @@ menu:
   About: about
 
 
+#主页中的话
+index:
+  welcome: 欢迎来到我的博客
+  welcome_p: 'thinking, coding'
+  about: 关于我，热爱coding，喜欢星际争霸2
+  works: 这里展示了一些我以前的作品，以及我最近正在填的坑...
+  notes: 这里是我的最近的一些笔记，有自己在coding中的感悟，也有从其他地方转载的好文章。
+  contact: 假如你想要联系我，请Email我，或者给我留言。
+
+
+
 #主页图片URL，home的图片如果需要替换，直接替换img中的home.png即可
 pictures:
   about: img/about.png

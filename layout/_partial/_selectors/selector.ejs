@@ -7,12 +7,25 @@
                 <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
                     <li><a href="/"><%=__('nav.home')%></a></li>
                     <li><a href="/archives"><%=__('nav.archives')%></a></li>
-                    <li><a href="/categories"><%=__('nav.categories')%>Categories</a></li>
+                    <li><a href="/categories"><%=__('nav.categories')%></a></li>
                     <li><a href="/tags"><%=__('nav.tags')%></a></li>
                     <li><a href="/works"><%=__('nav.works')%></a></li>  
                     <li><a href="/about"><%=__('nav.about')%></a></li>  
                 </ul>
             </div>
+            <%}else{%>
+             <div class="btn-group">
+                 <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
+                    <%=__('nav.archives')%> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                    <li><a href="/"><%=__('nav.home')%></a></li>
+                    <li><a href="/categories"><%=__('nav.categories')%></a></li>
+                    <li><a href="/tags"><%=__('nav.tags')%></a></li>
+                    <li><a href="/works"><%=__('nav.works')%></a></li>  
+                    <li><a href="/about"><%=__('nav.about')%></a></li>  
+                </ul>
+             </div>
             <%}%>
         </div>
         <div class="clear"></div>
