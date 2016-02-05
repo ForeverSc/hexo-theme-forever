@@ -268,14 +268,46 @@
 
 /*article-content*/
 .article-content{
+    padding: 0 1em 0 1em;
+}
 
+.article-content p{
+    margin: 0;
+}
+
+
+.article-content hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .article-content img{
     width: 50%;
     height: 50%;
-
+    margin: 1em 0 1em 0;
 }
+
+.article-content figure{
+    background: #4d4d4d;
+    margin:1em 0 1em 0;
+}
+
+.article-content figure table{
+   border-collapse: collapse;
+}
+
+
+.article-content figure pre{
+    margin: 0;
+    color: aliceblue;
+    background: #4d4d4d;
+    border: none;
+}
+
+
+
+
+
 
 
 

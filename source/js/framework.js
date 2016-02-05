@@ -95,7 +95,8 @@ $(window).scroll(function () {
 });
 //返回
 function goBack() {
-    history.go(-1); //history.back(-1);
+    window.history.back();
+    //history.go(-1); //history.back(-1);
 }
 
 $(".back a").click(function () {

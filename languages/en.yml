@@ -1,0 +1,20 @@
+index:
+  home: 'Home'
+  about: 'About'
+  works: 'Works'
+  notes: 'Notes'
+  contact: 'Contact'
+
+nav:
+  atags: 'Tags'
+  categories: 'Categories'
+  archives: 'Archives'
+  works: 'Works'
+  about: 'About'
+  home: 'Home'
+  note: 'Note' 
+  next: 'Next'
+  prev: 'Prev'
+  older: 'Older'
+  newer: 'Newer'
+
