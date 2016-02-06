@@ -130,11 +130,11 @@ $(document).ready(function(){
    
      /*文章前部*/
     //$(".article-tag-list").find(".article-tag-list-item").prepend(tagspan);  
-    $(".article-tag-list").find(".article-tag-list-item").find(".article-tag-list-link").addClass("fui-tag");
-    $(".article-tag-list").find(".article-tag-list-item").find(".article-tag-list-link").prepend(" ");
+    $(".article-tag-list").find(".article-tag-list-item").addClass("fui-tag");
+    //$(".article-tag-list").find(".article-tag-list-item").find(".article-tag-list-link").prepend(" ");
     
     /*tags列表中*/
-    $(".layout-wrap-inner.tag-cloud a").addClass("fui-tag");
+    $(".layout-wrap-inner.tag-cloud li").addClass("fui-tag");
 });
 
 

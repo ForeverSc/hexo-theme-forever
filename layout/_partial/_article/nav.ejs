@@ -1,40 +1,30 @@
  <% if (page.prev || page.next){ %>
-    <div  class="navbar navbar-inverse navbar-embossed" role="navigation">
-      <ul class="nav navbar-nav">
       <% if (page.prev){ %>
-       <li>
-        <a href="<%- url_for(page.prev.path) %>">
+       
+        <a class="prev-arrow" href="<%- url_for(page.prev.path) %>">
           <strong class="fui-arrow-left"></strong>
+            <%= __('nav.newer')%>
             <% if (page.prev.title){ %>
               <%= page.prev.title %>
             <% } else { %>
               (no title)
             <% } %>
         </a>
-        </li>
+       
+       
       <% } %>
       <% if (page.next){ %>
-       <li>
-        <a href="<%- url_for(page.next.path) %>">
+        
+        <a class="next-arrow" href="<%- url_for(page.next.path) %>">
+           <%= __('nav.older')%>
             <%= page.next.title %>
           <strong class="fui-arrow-right"></strong>
         </a>
-        </li>
+       
       <% } %>
-      </ul>
+      <div class="clear"></div>
+    
       
       
-      <form class="navbar-form navbar-right" action="#" role="search">
-      <div class="form-group">
-        <div class="input-group">
-          <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-          <span class="input-group-btn">
-            <button type="submit" class="btn"><span class="fui-search"></span></button>
-          </span>
-        </div>
-      </div>
-    </form>
-      
- 
-    </div>
+    
 <% } %>
