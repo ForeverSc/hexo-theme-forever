@@ -4,10 +4,12 @@
         <% var articles=site.posts.toArray();%>
         <%var length=articles.length%>
         <% for(var i=0;i<6;i++){ %>
+          <% if(articles[length-i-1]!==undefined){%>
             <li>
                <a href="<%=articles[length-i-1].path%>"><%=articles[length-i-1].title%></a>
                <span class="fui-calendar"> <%=date(articles[length-i-1].date,'YYYY/M/D')%></span>
            </li>
+           <%}%>
         <%}%>
           </ul>
     <p><%=theme.index.notes%></p>
