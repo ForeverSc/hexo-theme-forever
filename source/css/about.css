@@ -46,12 +46,16 @@
   src: url('../fonts/glyphicons/flat-ui-icons-regular.eot');
   src: url('../fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('../fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('../fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
 }
-
+html,body{
+    width: 100%;
+    height: 100%;
+}
 
 .container{
     font-family: Lato,'Microsoft YaHei';
     margin: 1em 0em;
     width: 100%;
+    height: 100%;
     padding: 0 2em 0 2em;
 }
 
@@ -207,9 +211,11 @@
 
 /*页脚*/
 .footer{
+    padding:0 2em 2em 1em;
     font-size: 14px;
     text-align: center;
     width: 100%;
+    height: 3em;
 }
 
 .footer-left{
@@ -249,11 +255,14 @@
 
 .archive-article-inner .a-title{
     color: #34495e;
+    display: block;
+    float: left;
+    width: 80%;
 }
 
 
 .archive-article-inner .a-date{
-    float: right;
+    float: left;
     color: #34495e;
 }
 
@@ -272,14 +281,20 @@
 }
 
 .article-tag .article-tag-list{
+    padding-left: 1em;
     float: left;
     list-style: none;
 }
 
+.article-tag .article-tag-list .fui-tag{
+    float: left;
+}
+
+
 .article-tag-list .article-tag-list-item{
     float: left;
     font-size: 18px;
-    margin-right: 1.2em;
+    margin-right:0.5em;
 }
 
 .article-tag-list .article-tag-list-item:last-child{

@@ -47,11 +47,7 @@
   src: url('../fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('../fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('../fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
 }
 
-
-
-
 /*主体*/
-
 html,
 body {
     margin: 0px;
@@ -186,12 +182,13 @@ body {
 
 /*作品展示板块*/
 
+
 #works .onework {
     position: relative;
     float: left;
     width: 20%;
     height: 40%;
-    margin: 1em 2em 1em 0;
+    margin: 1.3em;
     border: 1px solid #ddd;
     box-shadow: 1px 1px 1px #ccc;
     overflow: hidden;
@@ -229,28 +226,21 @@ body {
 
 #notes ul li{
     width: 100%;
-    height: 3em;
+    height: 3em;    
     text-align: left;
-    line-height: 3em;
-    padding-right: 3em;
+    line-height: 3em;  
+}
+
+#notes ul li a{
+    display: block;
+    width: 80%;
+    float: left;
 }
 
 #notes ul li span{
-    float: right;
-    margin-right: lem;
+    float: left;
+    margin-left: 1em;
 }
-
-#notes button{
-    width: 10em;
-    height: 3em;
-    text-align: center;
-    margin: 3em auto;
-}
-
-
-
-
-
 
 
 
