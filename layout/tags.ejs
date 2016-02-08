@@ -1,28 +1,26 @@
-    <div class="container">
-        <div class="back">
-            <a href="#">
-                <span class="fui-arrow-left"></span>
-            </a>
-        </div>
-        <%- partial('_partial/_selectors/selector')%>
+<div class="container">
+    <div class="back">
+        <a href="#">
+            <span class="fui-arrow-left"></span>
+        </a>
+    </div>
+    <%- partial('_partial/_selectors/selector')%>
         <section class="layout-wrap">
-          <div class="layout-title">
-            <span><%= page.title %></span>
-          </div>
-          <div class="layout-wrap-inner tag-cloud">
-            <% if(site.tags.length) { %>
-              <%- list_tags(site.tags) %>
+            <div class="layout-title">
+                <span><%= page.title %></span>
+            </div>
+            <div class="layout-wrap-inner tag-cloud">
+                <% if(site.tags.length) { %>
+                    <%- list_tags(site.tags) %>
 
-            <% } %>
-          </div>
-        </section>   
+                        <% } %>
+            </div>
+        </section>
         <div class="jumptohead">
             <a href="#">
                 <span class="fui-triangle-up"></span>
             </a>
         </div>
-        <div class="clear"></div> 
-         <hr>
-        <%- partial('_partial/footer')%>
-    </div>
-        
+        <div class="clear"></div>
+</div>
+<%- partial('_partial/footer')%>

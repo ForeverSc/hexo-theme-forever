@@ -1,19 +1,15 @@
-
-   <div class="container">
-        <div class="back">
-            <a href="#">
-                <span class="fui-arrow-left"></span>
-            </a>
-        </div>
-        <%- partial('_partial/archive', {pagination: config.category, index: true}) %>
+<div class="container">
+    <div class="back">
+        <a href="#">
+            <span class="fui-arrow-left"></span>
+        </a>
+    </div>
+    <%- partial('_partial/archive', {pagination: config.category, index: true}) %>
         <div class="jumptohead">
             <a href="#">
                 <span class="fui-triangle-up"></span>
             </a>
         </div>
         <div class="clear"></div>
-        <hr>
-        <%- partial('_partial/footer')%>
-        
-    </div>
-    
+</div>
+<%- partial('_partial/footer')%>

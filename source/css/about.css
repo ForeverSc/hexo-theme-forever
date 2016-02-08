@@ -53,9 +53,16 @@ html,body{
 
 .container{
     font-family: Lato,'Microsoft YaHei';
-    margin: 1em 0em;
+    margin: 1em 0em -5em;
     width: 100%;
+    min-height: 100%;
     padding: 0 2em 0 2em;
+}
+
+.container:after{
+    content: "";
+    display: block;
+    height: 5em;
 }
 
 /*返回块*/
@@ -210,12 +217,18 @@ html,body{
 
 /*页脚*/
 .footer{
-    padding:0 2em 2em 1em;
+    padding:0em 2em 0em 2em;
     font-size: 14px;
     text-align: center;
     width: 100%;
     height: 3em;
 }
+
+.footer hr{
+     margin-top: 1em;
+     margin-bottom: 1.5em;
+}
+
 
 .footer-left{
     float: left;
@@ -313,15 +326,30 @@ html,body{
 
 /*categories and tags*/
 /*tags*/
-.layout-wrap{
-   
+.layout-wrap{ 
     text-align: center;
 }
 
-.layout-wrap-inner .tag-list{
+.layout-wrap-inner.tag-cloud{
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.layout-wrap-inner.tag-cloud .tag-list{
     list-style: none;
+}
+
+.tag-list-item.fui-tag{
+    margin-top: 1em;
     text-align: left;
-    font-size: 20px;
+}
+
+.layout-wrap-inner.tag-cloud .tag-list .tag-list-count:before{
+    content: "(";
+}
+
+.layout-wrap-inner.tag-cloud .tag-list .tag-list-count:after{
+    content: ")";
 }
 
 
@@ -339,9 +367,25 @@ html,body{
     padding: 0 20% 0 20%;
 }
 
+.layout-wrap-inner.list-categories{
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #eee;
+}
+
+
 .layout-wrap-inner.list-categories .category-list-item{
+    margin-top: 1em;
     text-align: left;
 }
+
+.layout-wrap-inner.list-categories .category-list-item span:before{
+    content: "(";  
+}
+.layout-wrap-inner.list-categories .category-list-item span:after{
+    content: ")";  
+}
+
+
 .layout-wrap-inner.list-categories .category-list-item .category-list-link{
     margin-right: 1em;
 }

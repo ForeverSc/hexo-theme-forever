@@ -1,23 +1,19 @@
-<%- partial('_selectors/selector')%>
+ <%- partial('_selectors/selector')%>
     <div class="content">
-       <div class="one-article">
-        <h1><%=page.title%></h1>
-        <div class="article-info">
-            <%- partial('_article/date')%>
-            <%- partial('_article/tags')%>
-            <%- partial('_article/categories')%>
-       
-            <div class="clear"></div>   
-      </div>
-      <hr>
-      <div class="article-content">
-      <%- markdown(page.content) %>
-      </div> 
+        <div class="one-article">
+            <h1><%=page.title%></h1>
+            <div class="article-info">
+                <%- partial('_article/date')%>
+                <%- partial('_article/tags')%>
+                <%- partial('_article/categories')%>
+                <div class="clear"></div>
+            </div>
+            <hr>
+            <div class="article-content">
+                <%- markdown(page.content) %>
+            </div>
         </div>
-     
-       <div class="article-nav">
-         <%- partial('_article/nav')%>  
-      </div>         
-        
-        
-    </div>
+        <div class="article-nav">
+            <%- partial('_article/nav')%>
+        </div>
+    </div>   
