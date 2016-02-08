@@ -55,7 +55,6 @@ html,body{
     font-family: Lato,'Microsoft YaHei';
     margin: 1em 0em;
     width: 100%;
-    height: 100%;
     padding: 0 2em 0 2em;
 }
 
@@ -333,14 +332,20 @@ html,body{
 
 
 /*categories*/
-.layout-wrap-inner .list-categories{
-    float: left;
+
+.layout-wrap{
+    margin: 0;
+    display: block;
+    padding: 0 20% 0 20%;
 }
 
-
-.layout-wrap-inner.list-categories .category-list{
-    list-style: none;
+.layout-wrap-inner.list-categories .category-list-item{
+    text-align: left;
 }
+.layout-wrap-inner.list-categories .category-list-item .category-list-link{
+    margin-right: 1em;
+}
+
 
 
 
