@@ -156,23 +156,18 @@ body {
 }
 #home {
     color: #fff;
-    background: url(../img/home.png) center no-repeat;
+    background: url(../img/home.jpg) center no-repeat;
     background-size: cover;
 }
 #home h3 {
     font-weight: 200;
-    position: absolute;
-    left: 50%;
+    position: relative;
     top: 50%;
     margin: 0px;
 }
-#home p {
-    font-size: 22px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin: 0px;
-}
+
+
+
 #about,
 #works,
 #notes,

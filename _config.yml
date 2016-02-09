@@ -9,8 +9,7 @@ menu:
 
 #主页中的话
 index:
-  welcome: 欢迎来到我的博客
-  welcome_p: 'thinking, coding'
+  welcome: 'Be the change you want to see in the world.'
   about: 关于我，热爱coding，喜欢思考，喜欢长跑，星际争霸2
   works: 这里展示了一些我以前的作品，以及我最近正在填的坑...
   notes: 这里是我的最近的一些笔记，有自己在coding中的感悟，也有从其他地方转载的好文章。
@@ -20,8 +19,8 @@ index:
 
 #主页图片URL，home的图片如果需要替换，直接替换img中的home.png即可
 pictures:
-  about: img/about.png
-  contact: img/contact.png
+  about: img/about.jpg
+  contact: img/contact.jpg
 
 #你的社交
 contact:
@@ -29,10 +28,10 @@ contact:
   mail: fengshuochn@126.com
 
 #你的头像url
-avatar: img/avatar.png
+avatar: img/avatar.jpg
 
 #你的座右铭
-motto: thinking coding
+motto: 'thinking&coding'
 
 #works的URL
 works:
