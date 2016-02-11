@@ -4,7 +4,7 @@ hexo-theme-forever
 Forever 是一款[hexo](https://github.com/tommy351/hexo) 主题  
 主页采用双栏布局，文章页为聚焦内容，采用单页布局  
 点击[我的博客](http://fengshuochn.com)进行预览  
-假如感觉不错点个star支持一下，如果感觉太low就请忽视...  
+
 
 ## 关于主题
 
