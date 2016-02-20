@@ -5,6 +5,7 @@ Forever 是一款[hexo](https://github.com/tommy351/hexo) 主题
 主页采用双栏布局，文章页为聚焦内容，采用单页布局  
 点击[我的博客](http://fengshuochn.com)进行预览  
 
+----------
 
 ## 关于主题
 

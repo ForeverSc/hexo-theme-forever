@@ -10,44 +10,43 @@ function _scroll(obj, time) {
 
 /*主页部分*/
 //导航栏选中阴影&&平稳滑动效果
-var lilist = $(".content-section ul li");
-var alist = lilist.find("a");
-alist.each(function () {
-    $(this).click(function () {
+var $li_list = $(".content-section ul li");
+var $a_list = $li_list.find("a");
+$a_list.each(function () {
+    $(this).click(function (e) {
         //增加导航栏选中阴影效果
-        for (var i = 0; i < alist.length; i++) {
-            $(alist[i]).removeClass("active");
-        }
-        $(this).addClass("active");
+        $(this).addClass("active").siblings().removeClass("active");
         //增加平稳滑动效果
+        if(!$("html,body").is(":animated")){
         _scroll($(this).attr("href"), 1000);
-        return false;
+        }
+        e.preventDefault();
     });
 });
 
 //随滚动条滚动，相应导航栏发生变化
 var offsetlist = []; //用于储存偏移量
-for (var i = 0; i < alist.length; i++) {
-    var obj = $(alist[i]).attr("href");
+for (var i = 0; i < $a_list.length; i++) {
+    var obj = $($a_list[i]).attr("href");
     var offset = $(obj).offset().top; //$(obj).scrollTop()
     offsetlist[i] = offset;
 }
 $(window).scroll(function () {
     var topval = $(window).scrollTop();
     if (topval < offsetlist[1] / 2) {
-        for (var i = 0; i < alist.length; i++) {
-            $(alist[i]).removeClass("active");
+        for (var i = 0; i < $a_list.length; i++) {
+            $($a_list[i]).removeClass("active");
         }
-        $(alist[0]).addClass("active");
+        $($a_list[0]).addClass("active");
     } else {
 
         for (var j = 0; j < offsetlist.length; j++) {
 
             if (topval > offsetlist[j] + (offsetlist[j + 1] - offsetlist[j]) / 2) {
-                for (var i = 0; i < alist.length; i++) {
-                    $(alist[i]).removeClass("active");
+                for (var i = 0; i < $a_list.length; i++) {
+                    $($a_list[i]).removeClass("active");
                 }
-                $(alist[j + 1]).addClass("active");
+                $($a_list[j + 1]).addClass("active");
             } else {
                 continue;
             }
