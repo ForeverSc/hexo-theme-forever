@@ -1,5 +1,5 @@
-
 /*主体*/
+
 html,
 body {
     margin: 0px;
@@ -44,11 +44,9 @@ body {
 .sidermenubar .contact-section {
     padding: 0px 40px 10px 40px;
 }
-.sidermenubar .contact-section a{
+.sidermenubar .contact-section a {
     color: #fff;
 }
-
-
 .sidermenubar .contact-section ul {
     padding: 0px;
     text-align: center;
@@ -57,10 +55,9 @@ body {
     display: inline;
     margin: 5px;
 }
-.sidermenubar .content-section a{
+.sidermenubar .content-section a {
     color: #fff;
 }
-
 .sidermenubar .content-section ul {
     list-style-type: none;
     padding: 0px;
@@ -110,16 +107,21 @@ body {
     color: #fff;
     background: url(../img/home.jpg) center no-repeat;
     background-size: cover;
+    position: relative;
 }
 #home h3 {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding-top: 16%;
     font-weight: 200;
-    position: relative;
-    top: 50%;
-    margin: 0px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
 }
-
-
-
 #about,
 #works,
 #notes,
@@ -129,68 +131,98 @@ body {
 
 /*作品展示板块*/
 
-
-#works .onework {
+#works {
     position: relative;
-    float: left;
-    width: 20%;
-    height: 40%;
-    margin: 1em 1.3em 3em;
-    border: 1px solid #ddd;
-    box-shadow: 1px 1px 1px #ccc;
+}
+#works .float-works {
+    position: relative;
+    height: 60%;
+    margin: 1em;
     overflow: hidden;
 }
-
-#works .onework a img {
-    margin: 0px;
-    width: 100%;
-    height: 80%;
-}
-#works .onework h6 {
-    text-align: center;
-}
-
-#works .img-div{ 
+#works .onework {
     position: absolute;
-    margin: 0px;
-    background: #898989;
-    color:aliceblue;
-    left: 0px;
-    top: -100%;
-    opacity:0.8;
+        overflow: hidden;
+}
+
+#works .onework a{
+    display: block;
     width: 100%;
-    height: 80%;
+    height: 100%;
+}
+
+#works .work1 {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+#works .work2 {
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+}
+#works .work3 {
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 50%;
+}
+#works .work4 {
+    top: 50%;
+    left: 75%;
+    width: 25%;
+    height: 50%;
+}
+#works .onework img {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+#works .img-div {
+    position: absolute;
+    left: 0px;
+    top: -120%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    /*padding: 50% 1em 50% 1em;*/
+    background: #898989;
+    color: aliceblue;
+    opacity: 0.8;
     text-align: center;
-    padding:50% 1em 50% 1em;
+    vertical-align:;
+    overflow: hidden;
+}
+#works .img-div p{
+    position: absolute;
+    top: 80%;
+    left: 1em;
 }
 
 
 /*笔记板块*/
-#notes ul{
+
+#notes ul {
     border: 1px solid #ddd;
     box-shadow: 1px 1px 1px #ccc;
 }
-
-#notes ul li{
+#notes ul li {
     width: 100%;
-    height: 3em;    
+    height: 3em;
     text-align: left;
-    line-height: 3em;  
+    line-height: 3em;
 }
-
-#notes ul li a{
+#notes ul li a {
     display: block;
     width: 80%;
     float: left;
 }
-
-#notes ul li span{
+#notes ul li span {
     float: left;
     margin-left: 1em;
 }
-
-
-
 
 /*留言板块*/
 
@@ -219,11 +251,10 @@ body {
 }
 
 /*页脚*/
-.clear{
+
+.clear {
     clear: both;
 }
-
-
 .footer {
     font-size: 14px;
     float: left;
@@ -231,12 +262,9 @@ body {
     height: 10%;
     padding: 0.5em 2em;
 }
-
-.footer-left{
+.footer-left {
     float: left;
 }
-
-.footer-right{
+.footer-right {
     float: right;
 }
-

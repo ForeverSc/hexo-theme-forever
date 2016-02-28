@@ -4,7 +4,7 @@ function _scroll(obj, time) {
 
     $("html,body").animate({
         scrollTop: $(obj).offset().top
-    }, time,'swing');
+    }, time, 'swing');
 
 }
 
@@ -17,8 +17,8 @@ $a_list.each(function () {
         //增加导航栏选中阴影效果
         $(this).addClass("active").siblings().removeClass("active");
         //增加平稳滑动效果
-        if(!$("html,body").is(":animated")){
-        _scroll($(this).attr("href"), 1000);
+        if (!$("html,body").is(":animated")) {
+            _scroll($(this).attr("href"), 1000);
         }
         e.preventDefault();
     });
@@ -63,17 +63,17 @@ $("#works img").hover(
     },
     function () {
         $(this).siblings("div").finish().delay(100).animate({
-            top: '-100%'
+            top: '-120%'
         }, 400);
     }
 
 );
 
 //设置点击作品的链接
-$(document).ready(function(){
+$(document).ready(function () {
     //$("#works .onework a").attr("href","./work.html");
     //$("#notes ul li a").attr("href","./note.html");
-    
+
 });
 
 
@@ -105,41 +105,58 @@ $(".back a").click(function () {
 
 //触发图片hover事件,下拉遮罩效果
 $(".one-work img").hover(
+
     function () {
-        $(this).siblings("div").finish().delay(100).animate({
-            top: 0
-        }, 400);
+        if (!$(this).siblings("div").is(":animated")) {
+            $(this).siblings("div").stop(true).delay(200).animate({
+                top: 0
+            }, 800);
+        }
     },
     function () {
-        $(this).siblings("div").finish().delay(100).animate({
-            top: '-100%'
-        }, 400);
+        if (!$(this).siblings("div").is(":animated")) {
+            $(this).siblings("div").stop(true).delay(200).animate({
+                top: '-120%'
+            }, 800);
+        }
     }
-);
+)
 
 /*主页加载完成后，新增*/
 //change button点击更换推荐的文章
-$(document).ready(function(){
-    
+$(document).ready(function () {
+
 });
 
-
 /*为每个tag增加背景图*/
-$(document).ready(function(){
-   var tagspan=document.createElement("span");
-    tagspan.setAttribute("class","fui-tag");
-     /*文章前部*/
+$(document).ready(function () {
+    var tagspan = document.createElement("span");
+    tagspan.setAttribute("class", "fui-tag");
+    /*文章前部*/
     //$(".article-tag-list").find(".article-tag-list-item").prepend(tagspan);
     $(".article-tag-list").prepend(tagspan);
-    
-   // $(".article-tag-list").find(".article-tag-list-item").addClass("fui-tag");
+
+    // $(".article-tag-list").find(".article-tag-list-item").addClass("fui-tag");
     //$(".article-tag-list").find(".article-tag-list-item").find(".article-tag-list-link").prepend(" ");
-    
+
     /*tags列表中*/
     $(".layout-wrap-inner.tag-cloud li").addClass("fui-tag");
 });
 
-
-
-
-
+//轮转效果
+$(function () {
+    $("input[value='<']").floatSquare({
+        contentClass: ".float-works",
+        floatClass: ".onework",
+        direction: "prev",
+        speed: 800
+    });
+    $("input[value='>']").floatSquare({
+        contentClass: ".float-works",
+        floatClass: ".onework",
+        direction: "next",
+        speed: 800,
+        //autoFloat: true,
+       // autoInterval: 3000
+    });
+});
