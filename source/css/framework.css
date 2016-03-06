@@ -1,8 +1,6 @@
 /*主体*/
-
 html,
 body {
-    margin: 0px;
     width: 100%;
     height: 100%;
 }
@@ -136,17 +134,18 @@ body {
 }
 #works .float-works {
     position: relative;
+    width: 95%;
     height: 60%;
     margin: 1em;
     overflow: hidden;
 }
 #works .onework {
     position: absolute;
-        overflow: hidden;
+    overflow: hidden;
+    border: 0;
 }
 
 #works .onework a{
-    display: block;
     width: 100%;
     height: 100%;
 }
@@ -202,11 +201,15 @@ body {
 }
 
 
+
+
 /*笔记板块*/
 
 #notes ul {
     border: 1px solid #ddd;
     box-shadow: 1px 1px 1px #ccc;
+    padding-right: 1em;
+     
 }
 #notes ul li {
     width: 100%;
@@ -215,12 +218,11 @@ body {
     line-height: 3em;
 }
 #notes ul li a {
-    display: block;
     width: 80%;
-    float: left;
+    
 }
 #notes ul li span {
-    float: left;
+    float: right;
     margin-left: 1em;
 }
 

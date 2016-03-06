@@ -1,58 +1,15 @@
-/*字体设置*/
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-black.eot');
-  src: url('../fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black.woff') format('woff'), url('../fonts/lato/lato-black.ttf') format('truetype'), url('../fonts/lato/lato-black.svg#latoblack') format('svg');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-bold.eot');
-  src: url('../fonts/lato/lato-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bold.woff') format('woff'), url('../fonts/lato/lato-bold.ttf') format('truetype'), url('../fonts/lato/lato-bold.svg#latobold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-bolditalic.eot');
-  src: url('../fonts/lato/lato-bolditalic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bolditalic.woff') format('woff'), url('../fonts/lato/lato-bolditalic.ttf') format('truetype'), url('../fonts/lato/lato-bolditalic.svg#latobold-italic') format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-italic.eot');
-  src: url('../fonts/lato/lato-italic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-italic.woff') format('woff'), url('../fonts/lato/lato-italic.ttf') format('truetype'), url('../fonts/lato/lato-italic.svg#latoitalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-light.eot');
-  src: url('../fonts/lato/lato-light.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-light.woff') format('woff'), url('../fonts/lato/lato-light.ttf') format('truetype'), url('../fonts/lato/lato-light.svg#latolight') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-regular.eot');
-  src: url('../fonts/lato/lato-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular.woff') format('woff'), url('../fonts/lato/lato-regular.ttf') format('truetype'), url('../fonts/lato/lato-regular.svg#latoregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Flat-UI-Icons';
-  src: url('../fonts/glyphicons/flat-ui-icons-regular.eot');
-  src: url('../fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('../fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('../fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
-}
 html,body{
     width: 100%;
     height: 100%;
+    font-family:'Microsoft YaHei';
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-    font-family: Lato,'Microsoft YaHei';
     margin: 1em 0em -5em;
     width: 100%;
     min-height: 100%;
@@ -108,14 +65,32 @@ html,body{
     width: 100%;
 }
 .content .one-article h1{
+    font-size: 3rem;
     text-align: center;
 }
+.content .one-article h2{
+    font-size: 2.5rem;
+}
+.content .one-article h3{
+    font-size: 2rem;
+}
+.content .one-article h4{
+    font-size: 2rem;
+}
+.content .one-article h5{
+    font-size: 1.5rem;
+}
 
+.content .one-article h6{
+    font-size: 1.1rem;
+}
 .content .one-article p{ 
     text-align: justify;
-    font-size: 16px;
+    font-size: 1rem;
     line-height:1.7;
 }
+
+
 
 .content .one-article  img{
     max-width:100%;
@@ -218,7 +193,7 @@ html,body{
 /*页脚*/
 .footer{
     padding:0em 2em 0em 2em;
-    font-size: 14px;
+    font-size: 0.8rem;
     text-align: center;
     width: 100%;
     height: 3em;
@@ -235,10 +210,17 @@ html,body{
 
 
 /*archives*/
+
+
+
 .content .archives-wrap{
     border: 1px solid #ddd;
     box-shadow: 1px 1px 1px #ccc;
     margin: 2em;
+}
+
+.content .archives-wrap .archive-year-wrap{
+    font-size: 1.5rem;
 }
 
 .content .archives-wrap hr{
@@ -261,10 +243,11 @@ html,body{
 
 
 .archive-article-inner .a-title{
-    color: #34495e;
     display: block;
     float: left;
     width: 80%;
+    font-size: 1rem;
+    color: #34495e;
 }
 
 
@@ -282,6 +265,10 @@ html,body{
 
 
 /*tags和categories*/
+.layout-title{
+    font-size: 1.5em;
+}
+
 .article-tag,.article-category {
     float: left;
     margin-top: 0;
@@ -297,10 +284,9 @@ html,body{
     float: left;
 }
 
-
 .article-tag-list .article-tag-list-item{
     float: left;
-    font-size: 18px;
+    font-size: 1rem;
     margin-right:0.5em;
 }
 
@@ -394,10 +380,9 @@ html,body{
 
 /*nav*/
 .article-nav{
+    font-size: 0.9rem;
     margin-top: 2em;
 }
-
-
 
 .article-nav .pre-arrow{
     float: left;
@@ -406,11 +391,6 @@ html,body{
 .article-nav .next-arrow{
     float: right;
 }
-
-
-
-
-
 
 /*article-content*/
 .article-content{
@@ -421,7 +401,6 @@ html,body{
     margin: 0;
 }
 
-
 .article-content hr{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -430,18 +409,17 @@ html,body{
 .article-content img{
     width: 50%;
     height: 50%;
-    margin: 1em 0 1em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .article-content figure{
     background: #4d4d4d;
-    margin:1em 0 1em 0;
+    margin:0.5em 0 0.5em 0;
 }
 
 .article-content figure table{
    border-collapse: collapse;
 }
-
 
 .article-content figure pre{
     margin: 0;
