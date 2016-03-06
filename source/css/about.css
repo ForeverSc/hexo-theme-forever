@@ -4,10 +4,6 @@ html,body{
     font-family:'Microsoft YaHei';
     font-size: 16px;
 }
-h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-    padding: 0;
-}
 
 .container{
     margin: 1em 0em -5em;
@@ -278,6 +274,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding-left: 1em;
     float: left;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .article-tag .article-tag-list .fui-tag{
@@ -405,6 +402,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 
 .article-content img{
     width: 50%;
